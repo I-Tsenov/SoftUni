@@ -4,7 +4,7 @@ function maxEqualSeq(array) {
 
     for (let i = 0; i < array.length; i++) {
 
-        let currentSeq = [array[i]]
+        let currentSeq = [array[i]];
 
         for (let j = i + 1; j < array.length; j++) {
             

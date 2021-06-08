@@ -8,7 +8,6 @@ function maxNumber(array) {
  
         for (let j = i + 1; j < array.length; j++) {
 
-
             if (array[i] <= array[j]) {
                 isBigger = false;
                 break;
@@ -18,11 +17,9 @@ function maxNumber(array) {
         if (isBigger) {
             modArray.push(array[i])
         }
-
     }
 
     console.log(modArray.join(" "))
-
 }
 
 maxNumber([1, 4, 3, 2]);

@@ -1,9 +1,9 @@
 function equalSums(array) {
-    
+
     let isIndex = false;
 
     for (let i = 0; i < array.length; i++) {
-        
+
         let leftSum = 0;
         let rightSum = 0;
 

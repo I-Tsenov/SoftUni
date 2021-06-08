@@ -4,11 +4,10 @@ function DungeonestDark(arr) {
     let coins = 0;
     let index = 0;
     let roomCounter = 0;
-    let tempHealth = 0
+    let tempHealth = 0;
 
     let toString = arr.toString();
-
-    let toArray = toString.replace(/\|/g, " ").split(" ")
+    let toArray = toString.replace(/\|/g, ' ').split(' ')
 
     while (health > 0) {
 
