@@ -14,9 +14,8 @@ function perfectNumber(num) {
             break;
         }
     }
-    
-    return result;
 
+    return result;
 }
 
 console.log(perfectNumber(28));

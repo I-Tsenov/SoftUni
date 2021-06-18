@@ -45,7 +45,7 @@ function arrayManipulator(arr, commands) {
     function sumPairs(arr) {
 
         for (let j = 0; j < arr.length; j++) {
-            
+
             let nextNumbers = arr.splice(j, 2);
             let result = nextNumbers.reduce((a, b) => a + b);
             arr.splice(j, 0, result);
@@ -64,7 +64,6 @@ function arrayManipulator(arr, commands) {
     }
 
     return `[ ${arr.join(", ")} ]`;
-
 }
 
 console.log(arrayManipulator([1, 2, 4, 5, 6, 7], ['add 1 8', 'contains 1', 'contains 3', 'print']));

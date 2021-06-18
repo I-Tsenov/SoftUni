@@ -1,5 +1,29 @@
-                //                НЕУСПЕШЕН ОПИТ
+function bombNumbers(sequence, bomb) {
+    let specialNumber = bomb[0];
+    let bombPower = bomb[1];
 
+    while (sequence.includes(specialNumber)) {
+        let index = sequence.indexOf(specialNumber);
+        let elementsToRemove = bombPower * 2 + 1;
+        let startIndex = index - bombPower;
+
+        if (startIndex < 0) {
+            elementsToRemove += startIndex;
+            startIndex = 0;
+        }
+        sequence.splice(startIndex, elementsToRemove);
+    }
+    console.log(sequence.reduce((a, b) => a + b, 0));
+}
+
+// console.log(bombNumbers([1, 2, 2, 4, 2, 2, 2, 9], [4, 2]));
+// console.log(bombNumbers([1, 4, 4, 2, 8, 9, 1], [9, 3]));
+// console.log(bombNumbers([1, 7, 7, 1, 2, 3], [7, 1]));
+console.log(bombNumbers([1, 1, 2, 1, 1, 1, 2, 1, 1, 1], [2, 1]));
+
+
+
+/*                              НЕУСПЕШНО РЕШЕНИЕ:
 
 function bombNumbers(arr1, arr2) {
 
@@ -27,33 +51,6 @@ function bombNumbers(arr1, arr2) {
     }
 
     return sum;
-}
-
-// console.log(bombNumbers([1, 2, 2, 4, 2, 2, 2, 9], [4, 2]));
-// console.log(bombNumbers([1, 4, 4, 2, 8, 9, 1], [9, 3]));
-// console.log(bombNumbers([1, 7, 7, 1, 2, 3], [7, 1]));
-console.log(bombNumbers([1, 1, 2, 1, 1, 1, 2, 1, 1, 1], [2, 1]));
-
-
-
-/*                              ЧУЖДО РЕШЕНИЕ:
-
-function bombNumbers(sequence, bomb) {
-    let specialNumber = bomb[0];
-    let bombPower = bomb[1];
- 
-    while (sequence.includes(specialNumber)) {
-        let index = sequence.indexOf(specialNumber);
-        let elementsToRemove = bombPower * 2 + 1;
-        let startIndex = index - bombPower;
- 
-        if (startIndex < 0) {
-            elementsToRemove += startIndex;
-            startIndex = 0;
-        }
-        sequence.splice(startIndex, elementsToRemove);
-    }
-    console.log(sequence.reduce((a, b) => a + b, 0));
 }
 
 */

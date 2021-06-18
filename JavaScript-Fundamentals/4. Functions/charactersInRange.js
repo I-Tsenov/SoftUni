@@ -13,7 +13,6 @@ function charactersInRange(char1, char2) {
     }
 
     return inRange;
-    
 }
 
 console.log(charactersInRange("a", "d"));

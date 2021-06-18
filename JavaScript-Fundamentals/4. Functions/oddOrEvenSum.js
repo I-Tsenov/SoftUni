@@ -5,22 +5,19 @@ function oddOrEvenSum(num) {
 
     let toArray = String(num).split("")
 
-
     for (let i = 0; i < toArray.length; i++) {
-        const element = Number (toArray[i]);
+        const element = Number(toArray[i]);
 
         if (element % 2 === 0) {
             evenSum += element;
         } else {
             oddSum += element;
         }
-        
     }
 
-let result = `Odd sum = ${oddSum}, Even sum = ${evenSum}`;
+    let result = `Odd sum = ${oddSum}, Even sum = ${evenSum}`;
 
-return result;
-
+    return result;
 }
 
 console.log(oddOrEvenSum(1000435));

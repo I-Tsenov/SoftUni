@@ -22,7 +22,7 @@ function passwordValidator(str) {
         for (let char of str) {
 
             isValid = false;
-            
+
             let charPosition = char.charCodeAt(0)
 
             if (charPosition >= 48 && charPosition <= 57) {
@@ -47,10 +47,9 @@ function passwordValidator(str) {
 
         if (str.length >= 6 && str.length <= 10) {
             isValid = true;
-        } 
+        }
         return isValid;
     }
-
 
     function minDigitsCheck(str) {
 
@@ -74,7 +73,6 @@ function passwordValidator(str) {
     }
 
     return requirements;
-
 }
 
 console.log(passwordValidator('logIn'));

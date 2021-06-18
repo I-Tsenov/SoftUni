@@ -26,7 +26,7 @@ function buildAWall(arr) {
         concretePerDay += wall.length * 195 + ", ";
     }
 
-    concretePerDay = concretePerDay.replace(/,\s*$/,"");   //removes last coma
+    concretePerDay = concretePerDay.replace(/,\s*$/, "");   //removes last coma
     finalCost = `${concreteTotal * 1900} pesos`
 
     return concretePerDay + "\n" + finalCost;

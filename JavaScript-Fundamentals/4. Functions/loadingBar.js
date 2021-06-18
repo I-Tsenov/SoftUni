@@ -25,7 +25,6 @@ function loadingBar(num) {
     }
 
     return result;
-
 }
 
 console.log(loadingBar(50));

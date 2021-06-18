@@ -19,7 +19,6 @@ function distinctArray(array) {
 
     let result = array.join(" ");
     return result;
-
 }
 
 console.log(distinctArray([7, 7, 7, 7, 7, 7, 1, 2]));
@@ -68,15 +67,4 @@ function distinctArray(array) {
 
     return outputArr.join(" ");
 }
-
-
-
-
-
-
-
-
-
-
-
 */

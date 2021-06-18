@@ -13,14 +13,12 @@ function factorialDivision(num1, num2) {
         for (let i = 1; i <= num; i++) {
 
             output = output * i;
-
         }
 
         return output;
     }
 
     return result.toFixed(2);
-
 }
 
 

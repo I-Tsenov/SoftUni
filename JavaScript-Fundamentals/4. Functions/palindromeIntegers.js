@@ -10,8 +10,6 @@ function palindromeIntegers(array) {
 
         currentEl === reversedEl ? isPalindrome = true : isPalindrome = false;
 
-        // isPalindrome === true ? console.log("true") : console.log("false");            * judge не го приема
-
         if (isPalindrome) {
             console.log("true");
         } else {
@@ -21,4 +19,4 @@ function palindromeIntegers(array) {
 }
 
 // palindromeIntegers([123, 323, 421, 121]);
-palindromeIntegers([32,2,232,1010]);
+palindromeIntegers([32, 2, 232, 1010]);
