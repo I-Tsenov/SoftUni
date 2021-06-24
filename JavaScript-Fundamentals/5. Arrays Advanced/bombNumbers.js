@@ -13,7 +13,7 @@ function bombNumbers(sequence, bomb) {
         }
         sequence.splice(startIndex, elementsToRemove);
     }
-    console.log(sequence.reduce((a, b) => a + b, 0));
+    return sequence.reduce((a, b) => a + b, 0);
 }
 
 // console.log(bombNumbers([1, 2, 2, 4, 2, 2, 2, 9], [4, 2]));
